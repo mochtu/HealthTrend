@@ -7,15 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import <Dropbox/Dropbox.h>
+
 
 @implementation AppDelegate
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    DBAccountManager* accountMgr =
+    [[DBAccountManager alloc] initWithAppKey:@"18fy1d0bqp3kb35" secret:@"813jqt4lupe8c74"];
+    [DBAccountManager setSharedManager:accountMgr];
     // Override point for customization after application launch.
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url
+  sourceApplication:(NSString *)source annotation:(id)annotation {
+    DBAccount *account = [[DBAccountManager sharedManager] handleOpenURL:url];
+    if (account) {
+        NSLog(@"App linked successfully!");
+        return YES;
+    }
+    return NO;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

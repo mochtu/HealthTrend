@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Dropbox/Dropbox.h>
 
 @interface ViewController : UIViewController
+
+@property (strong,nonatomic) IBOutlet UITableView* table;
+
+- (IBAction)didPressLink;
+- (IBAction)addItemToTable;
 
 @end
