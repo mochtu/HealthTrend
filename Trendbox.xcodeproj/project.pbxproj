@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD09106E1840F91F005B6295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD09106D1840F91F005B6295 /* Foundation.framework */; };
+		CD0910701840F91F005B6295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD09106F1840F91F005B6295 /* CoreGraphics.framework */; };
+		CD0910721840F91F005B6295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0910711840F91F005B6295 /* UIKit.framework */; };
+		CD0910781840F91F005B6295 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD0910761840F91F005B6295 /* InfoPlist.strings */; };
+		CD09107A1840F91F005B6295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0910791840F91F005B6295 /* main.m */; };
+		CD09107E1840F91F005B6295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD09107D1840F91F005B6295 /* AppDelegate.m */; };
+		CD0910811840F91F005B6295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD09107F1840F91F005B6295 /* Main.storyboard */; };
+		CD0910841840F91F005B6295 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0910831840F91F005B6295 /* ViewController.m */; };
+		CD0910861840F91F005B6295 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0910851840F91F005B6295 /* Images.xcassets */; };
+		CD09108D1840F920005B6295 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD09108C1840F920005B6295 /* XCTest.framework */; };
+		CD09108E1840F920005B6295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD09106D1840F91F005B6295 /* Foundation.framework */; };
+		CD09108F1840F920005B6295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0910711840F91F005B6295 /* UIKit.framework */; };
+		CD0910971840F920005B6295 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD0910951840F920005B6295 /* InfoPlist.strings */; };
+		CD0910991840F920005B6295 /* TrendboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0910981840F920005B6295 /* TrendboxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD0910901840F920005B6295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0910621840F91F005B6295 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD0910691840F91F005B6295;
+			remoteInfo = Trendbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD09106A1840F91F005B6295 /* Trendbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trendbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD09106D1840F91F005B6295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD09106F1840F91F005B6295 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD0910711840F91F005B6295 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD0910751840F91F005B6295 /* Trendbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Trendbox-Info.plist"; sourceTree = "<group>"; };
+		CD0910771840F91F005B6295 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD0910791840F91F005B6295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD09107B1840F91F005B6295 /* Trendbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trendbox-Prefix.pch"; sourceTree = "<group>"; };
+		CD09107C1840F91F005B6295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD09107D1840F91F005B6295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD0910801840F91F005B6295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD0910821840F91F005B6295 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD0910831840F91F005B6295 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD0910851840F91F005B6295 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD09108B1840F920005B6295 /* TrendboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD09108C1840F920005B6295 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CD0910941840F920005B6295 /* TrendboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrendboxTests-Info.plist"; sourceTree = "<group>"; };
+		CD0910961840F920005B6295 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD0910981840F920005B6295 /* TrendboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrendboxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD0910671840F91F005B6295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0910701840F91F005B6295 /* CoreGraphics.framework in Frameworks */,
+				CD0910721840F91F005B6295 /* UIKit.framework in Frameworks */,
+				CD09106E1840F91F005B6295 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0910881840F920005B6295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD09108D1840F920005B6295 /* XCTest.framework in Frameworks */,
+				CD09108F1840F920005B6295 /* UIKit.framework in Frameworks */,
+				CD09108E1840F920005B6295 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD0910611840F91F005B6295 = {
+			isa = PBXGroup;
+			children = (
+				CD0910731840F91F005B6295 /* Trendbox */,
+				CD0910921840F920005B6295 /* TrendboxTests */,
+				CD09106C1840F91F005B6295 /* Frameworks */,
+				CD09106B1840F91F005B6295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD09106B1840F91F005B6295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD09106A1840F91F005B6295 /* Trendbox.app */,
+				CD09108B1840F920005B6295 /* TrendboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD09106C1840F91F005B6295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD09106D1840F91F005B6295 /* Foundation.framework */,
+				CD09106F1840F91F005B6295 /* CoreGraphics.framework */,
+				CD0910711840F91F005B6295 /* UIKit.framework */,
+				CD09108C1840F920005B6295 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD0910731840F91F005B6295 /* Trendbox */ = {
+			isa = PBXGroup;
+			children = (
+				CD09107C1840F91F005B6295 /* AppDelegate.h */,
+				CD09107D1840F91F005B6295 /* AppDelegate.m */,
+				CD09107F1840F91F005B6295 /* Main.storyboard */,
+				CD0910821840F91F005B6295 /* ViewController.h */,
+				CD0910831840F91F005B6295 /* ViewController.m */,
+				CD0910851840F91F005B6295 /* Images.xcassets */,
+				CD0910741840F91F005B6295 /* Supporting Files */,
+			);
+			path = Trendbox;
+			sourceTree = "<group>";
+		};
+		CD0910741840F91F005B6295 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD0910751840F91F005B6295 /* Trendbox-Info.plist */,
+				CD0910761840F91F005B6295 /* InfoPlist.strings */,
+				CD0910791840F91F005B6295 /* main.m */,
+				CD09107B1840F91F005B6295 /* Trendbox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD0910921840F920005B6295 /* TrendboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD0910981840F920005B6295 /* TrendboxTests.m */,
+				CD0910931840F920005B6295 /* Supporting Files */,
+			);
+			path = TrendboxTests;
+			sourceTree = "<group>";
+		};
+		CD0910931840F920005B6295 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD0910941840F920005B6295 /* TrendboxTests-Info.plist */,
+				CD0910951840F920005B6295 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD0910691840F91F005B6295 /* Trendbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD09109C1840F920005B6295 /* Build configuration list for PBXNativeTarget "Trendbox" */;
+			buildPhases = (
+				CD0910661840F91F005B6295 /* Sources */,
+				CD0910671840F91F005B6295 /* Frameworks */,
+				CD0910681840F91F005B6295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trendbox;
+			productName = Trendbox;
+			productReference = CD09106A1840F91F005B6295 /* Trendbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD09108A1840F920005B6295 /* TrendboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD09109F1840F920005B6295 /* Build configuration list for PBXNativeTarget "TrendboxTests" */;
+			buildPhases = (
+				CD0910871840F920005B6295 /* Sources */,
+				CD0910881840F920005B6295 /* Frameworks */,
+				CD0910891840F920005B6295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD0910911840F920005B6295 /* PBXTargetDependency */,
+			);
+			name = TrendboxTests;
+			productName = TrendboxTests;
+			productReference = CD09108B1840F920005B6295 /* TrendboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD0910621840F91F005B6295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Moritz C. Türck";
+				TargetAttributes = {
+					CD09108A1840F920005B6295 = {
+						TestTargetID = CD0910691840F91F005B6295;
+					};
+				};
+			};
+			buildConfigurationList = CD0910651840F91F005B6295 /* Build configuration list for PBXProject "Trendbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD0910611840F91F005B6295;
+			productRefGroup = CD09106B1840F91F005B6295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD0910691840F91F005B6295 /* Trendbox */,
+				CD09108A1840F920005B6295 /* TrendboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD0910681840F91F005B6295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0910861840F91F005B6295 /* Images.xcassets in Resources */,
+				CD0910781840F91F005B6295 /* InfoPlist.strings in Resources */,
+				CD0910811840F91F005B6295 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0910891840F920005B6295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0910971840F920005B6295 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD0910661840F91F005B6295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0910841840F91F005B6295 /* ViewController.m in Sources */,
+				CD09107E1840F91F005B6295 /* AppDelegate.m in Sources */,
+				CD09107A1840F91F005B6295 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0910871840F920005B6295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0910991840F920005B6295 /* TrendboxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD0910911840F920005B6295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD0910691840F91F005B6295 /* Trendbox */;
+			targetProxy = CD0910901840F920005B6295 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD0910761840F91F005B6295 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0910771840F91F005B6295 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD09107F1840F91F005B6295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0910801840F91F005B6295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD0910951840F920005B6295 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0910961840F920005B6295 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD09109A1840F920005B6295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD09109B1840F920005B6295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD09109D1840F920005B6295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendbox/Trendbox-Prefix.pch";
+				INFOPLIST_FILE = "Trendbox/Trendbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD09109E1840F920005B6295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendbox/Trendbox-Prefix.pch";
+				INFOPLIST_FILE = "Trendbox/Trendbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD0910A01840F920005B6295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trendbox.app/Trendbox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendbox/Trendbox-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TrendboxTests/TrendboxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CD0910A11840F920005B6295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trendbox.app/Trendbox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendbox/Trendbox-Prefix.pch";
+				INFOPLIST_FILE = "TrendboxTests/TrendboxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD0910651840F91F005B6295 /* Build configuration list for PBXProject "Trendbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD09109A1840F920005B6295 /* Debug */,
+				CD09109B1840F920005B6295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD09109C1840F920005B6295 /* Build configuration list for PBXNativeTarget "Trendbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD09109D1840F920005B6295 /* Debug */,
+				CD09109E1840F920005B6295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD09109F1840F920005B6295 /* Build configuration list for PBXNativeTarget "TrendboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0910A01840F920005B6295 /* Debug */,
+				CD0910A11840F920005B6295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD0910621840F91F005B6295 /* Project object */;
+}
