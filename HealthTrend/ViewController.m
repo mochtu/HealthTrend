@@ -50,7 +50,7 @@
     [self.accountManager addObserver:self block:^(DBAccount *account) {
         [slf setupTasks];
     }];
-    
+    self.occurrenceTableView.rowHeight = 70;
     [self setupTasks];
 }
 
@@ -80,7 +80,10 @@
 }
 
 //-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return 150;
+//    if (self.occurrenceTableView.editing)
+//        return 90;
+//    else
+//        return 70;
 //}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -98,7 +101,7 @@
         NSDate *date = occurrence[@"date"];
         NSDateFormatter *formater = [[NSDateFormatter alloc ] init];
                                       [formater setDateStyle:NSDateFormatterMediumStyle];
-        [formater setDateFormat: @"E d MMM yy\nHH:mm:ss"];
+        [formater setDateFormat: @"E d MMM`yy\nHH:mm 'Uhr'"];
         NSString *dateString =[formater stringFromDate:date];
         NSLog(@"Datestring of rendered cell: %@",dateString);
         
@@ -106,6 +109,7 @@
         taskCell.labelDate.text = dateString;
         [taskCell.switchMedicated setOn:[occurrence[@"medicated"] boolValue]];
         taskCell.labelDetails.text = [NSString stringWithFormat:@"%@",([occurrence[@"medicated"] boolValue]?@"behandelt":@"")];
+        taskCell.stepperStrength.value = [occurrence[@"strength"] doubleValue];
         taskCell.labelStrength.text = [NSString stringWithFormat:@"%@",occurrence[@"strength"]];
         //        UIView *checkmark = taskCell.taskCompletedView;
         //        if ([task[@"completed"] boolValue]) {
@@ -295,7 +299,12 @@
 //}
 
 -(IBAction)startEditMode{
-    [self.occurrenceTableView setEditing:!self.occurrenceTableView.editing animated:YES];
+    if([_occurrences count] > 0)
+    {
+        [self.occurrenceTableView setEditing:!self.occurrenceTableView.editing animated:YES];
+        self.occurrenceTableView.rowHeight = self.occurrenceTableView.editing?90:70;
+        [self.occurrenceTableView reloadData];
+    }
 }
 
 @end

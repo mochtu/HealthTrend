@@ -11,6 +11,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *labelDetails;
 @property (nonatomic, retain) IBOutlet UILabel *labelDate;
 @property (nonatomic, retain) IBOutlet UILabel *labelStrength;
+@property (nonatomic, retain) IBOutlet UILabel *labelDescriptorStrength;
 @property (nonatomic, retain) IBOutlet UISwitch *switchMedicated;
 @property (nonatomic, retain) IBOutlet UIStepper *stepperStrength;
 

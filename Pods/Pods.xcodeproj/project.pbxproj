@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311E492848CB472FB3C0A8B6 /* Pods-HealthTrend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D459630AC4647EDA58573E5 /* Pods-HealthTrend-dummy.m */; };
+		6F3D48C2C4154CC8A4ADFC58 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 561AEC1A455947A8AF4D51AA /* Pods-HealthTrend-Dropbox-Sync-API-SDK-dummy.m */; };
+		702EEB3702E04C77AF5D614A /* libPods-HealthTrend-Dropbox-Sync-API-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E96EE62C24D43B9476560 /* libPods-HealthTrend-Dropbox-Sync-API-SDK.a */; };
+		7A82568D4AE14512BE5362AC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D10F4016394E1189833945 /* SystemConfiguration.framework */; };
+		7C9EAF436A534CE487EC18F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FBE8EF43044BAAC05B47A /* Foundation.framework */; };
+		A327D031FE7F4B3A829A8416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B82DFE0B0214A57ACEE4496 /* QuartzCore.framework */; };
+		B06F21CAB4984B3EA51E40C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FBE8EF43044BAAC05B47A /* Foundation.framework */; };
+		BCE06C33D6DD4873A5D4E183 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6990A52912490287E2FA4C /* Security.framework */; };
+		C16A0BECFC684DC69BFD370E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B956F25C5B4E40B0795FFC /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D2FA4B9A5334AE2A31901B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92D12F6C7D5E4AC29AF3BAEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13880769FE1A49A898F4A929;
+			remoteInfo = "Pods-HealthTrend-Dropbox-Sync-API-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E4377496EB499B881DDB8A /* Pods-HealthTrend-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthTrend-resources.sh"; sourceTree = "<group>"; };
+		026EE3CE1D8F4265A0337D31 /* libPods-HealthTrend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthTrend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		188FBE8EF43044BAAC05B47A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4A89710495AA48E290A35C85 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthTrend-Dropbox-Sync-API-SDK-prefix.pch"; sourceTree = "<group>"; };
+		4B82DFE0B0214A57ACEE4496 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		561AEC1A455947A8AF4D51AA /* Pods-HealthTrend-Dropbox-Sync-API-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthTrend-Dropbox-Sync-API-SDK-dummy.m"; sourceTree = "<group>"; };
+		6D6AE6290493428BA1F35529 /* Pods-HealthTrend-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthTrend-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A0E96EE62C24D43B9476560 /* libPods-HealthTrend-Dropbox-Sync-API-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthTrend-Dropbox-Sync-API-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D10F4016394E1189833945 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		9D459630AC4647EDA58573E5 /* Pods-HealthTrend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthTrend-dummy.m"; sourceTree = "<group>"; };
+		B9B956F25C5B4E40B0795FFC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		C69BDE5E1DE849ABAB604530 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthTrend-Dropbox-Sync-API-SDK-Private.xcconfig"; sourceTree = "<group>"; };
+		D0C0AB1B4DEA43A0830C2BEB /* Pods-HealthTrend-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthTrend-environment.h"; sourceTree = "<group>"; };
+		DAF73EF45F4E484E8CDB3FF3 /* Pods-HealthTrend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthTrend.xcconfig"; sourceTree = "<group>"; };
+		DD0378BC725F40E88766FE2A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E413997D7F3B419B9AD99BCB /* Pods-HealthTrend-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthTrend-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F3C917BE8ACA4EEFB16393F7 /* Pods-HealthTrend-Dropbox-Sync-API-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthTrend-Dropbox-Sync-API-SDK.xcconfig"; sourceTree = "<group>"; };
+		FA10751B85F24CF6B7AD3A93 /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dropbox.framework; path = "dropbox-ios-sync-sdk-2.0.3/Dropbox.framework"; sourceTree = "<group>"; };
+		FF6990A52912490287E2FA4C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA589187ACE9484BABFEC3ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06F21CAB4984B3EA51E40C7 /* Foundation.framework in Frameworks */,
+				702EEB3702E04C77AF5D614A /* libPods-HealthTrend-Dropbox-Sync-API-SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C660CACEABAB4EA3B58C2F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C9EAF436A534CE487EC18F5 /* Foundation.framework in Frameworks */,
+				C16A0BECFC684DC69BFD370E /* CFNetwork.framework in Frameworks */,
+				BCE06C33D6DD4873A5D4E183 /* Security.framework in Frameworks */,
+				7A82568D4AE14512BE5362AC /* SystemConfiguration.framework in Frameworks */,
+				A327D031FE7F4B3A829A8416 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		318F23FC2C014B9890084CC9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4C853825B4AEAB555F3C1 /* Pods-HealthTrend */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D7B881188074A48BD2A3939 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CAF0144D0A44F8BA71A51A9 /* Dropbox-Sync-API-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4638A9D50CBC43D5BB63C891 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C69BDE5E1DE849ABAB604530 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-Private.xcconfig */,
+				561AEC1A455947A8AF4D51AA /* Pods-HealthTrend-Dropbox-Sync-API-SDK-dummy.m */,
+				4A89710495AA48E290A35C85 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-prefix.pch */,
+				F3C917BE8ACA4EEFB16393F7 /* Pods-HealthTrend-Dropbox-Sync-API-SDK.xcconfig */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		4CAF0144D0A44F8BA71A51A9 /* Dropbox-Sync-API-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				92CEF63464914C4DBBB4F5DE /* Frameworks & Libraries */,
+				508FBBFB9D024FF4AB3FFCBE /* Products */,
+				4638A9D50CBC43D5BB63C891 /* Support Files */,
+			);
+			path = "Dropbox-Sync-API-SDK";
+			sourceTree = "<group>";
+		};
+		508FBBFB9D024FF4AB3FFCBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A0E96EE62C24D43B9476560 /* libPods-HealthTrend-Dropbox-Sync-API-SDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FDF68B1C0254B848E26BD06 = {
+			isa = PBXGroup;
+			children = (
+				F53BE05482244C90BD7D3FBB /* Frameworks */,
+				3D7B881188074A48BD2A3939 /* Pods */,
+				F03C09946D95447B9E259D00 /* Products */,
+				318F23FC2C014B9890084CC9 /* Targets Support Files */,
+				DD0378BC725F40E88766FE2A /* Podfile */,
+			);
+			sourceTree = "<group>";
+		};
+		92CEF63464914C4DBBB4F5DE /* Frameworks & Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FA10751B85F24CF6B7AD3A93 /* Dropbox.framework */,
+			);
+			name = "Frameworks & Libraries";
+			sourceTree = "<group>";
+		};
+		E3E4C853825B4AEAB555F3C1 /* Pods-HealthTrend */ = {
+			isa = PBXGroup;
+			children = (
+				E413997D7F3B419B9AD99BCB /* Pods-HealthTrend-acknowledgements.markdown */,
+				6D6AE6290493428BA1F35529 /* Pods-HealthTrend-acknowledgements.plist */,
+				9D459630AC4647EDA58573E5 /* Pods-HealthTrend-dummy.m */,
+				D0C0AB1B4DEA43A0830C2BEB /* Pods-HealthTrend-environment.h */,
+				01E4377496EB499B881DDB8A /* Pods-HealthTrend-resources.sh */,
+				DAF73EF45F4E484E8CDB3FF3 /* Pods-HealthTrend.xcconfig */,
+			);
+			name = "Pods-HealthTrend";
+			sourceTree = "<group>";
+		};
+		F03C09946D95447B9E259D00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				026EE3CE1D8F4265A0337D31 /* libPods-HealthTrend.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53BE05482244C90BD7D3FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B956F25C5B4E40B0795FFC /* CFNetwork.framework */,
+				188FBE8EF43044BAAC05B47A /* Foundation.framework */,
+				4B82DFE0B0214A57ACEE4496 /* QuartzCore.framework */,
+				FF6990A52912490287E2FA4C /* Security.framework */,
+				93D10F4016394E1189833945 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13880769FE1A49A898F4A929 /* Pods-HealthTrend-Dropbox-Sync-API-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EC103C63DD44D619F59E1BD /* Build configuration list for PBXNativeTarget "Pods-HealthTrend-Dropbox-Sync-API-SDK" */;
+			buildPhases = (
+				D3B0A683D94B487DBF1D9E92 /* Sources */,
+				C660CACEABAB4EA3B58C2F86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthTrend-Dropbox-Sync-API-SDK";
+			productName = "Pods-HealthTrend-Dropbox-Sync-API-SDK";
+			productReference = 7A0E96EE62C24D43B9476560 /* libPods-HealthTrend-Dropbox-Sync-API-SDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		969D048F0F594D9EA669371C /* Pods-HealthTrend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B71E643D86491AA8628F86 /* Build configuration list for PBXNativeTarget "Pods-HealthTrend" */;
+			buildPhases = (
+				EA1457D98B364D2CA9C9278F /* Sources */,
+				AA589187ACE9484BABFEC3ED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2518F9FE7F7F4DD2AE3B7B64 /* PBXTargetDependency */,
+			);
+			name = "Pods-HealthTrend";
+			productName = "Pods-HealthTrend";
+			productReference = 026EE3CE1D8F4265A0337D31 /* libPods-HealthTrend.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92D12F6C7D5E4AC29AF3BAEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 722E29CBA1824903A81D2EEE /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6FDF68B1C0254B848E26BD06;
+			productRefGroup = F03C09946D95447B9E259D00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13880769FE1A49A898F4A929 /* Pods-HealthTrend-Dropbox-Sync-API-SDK */,
+				969D048F0F594D9EA669371C /* Pods-HealthTrend */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3B0A683D94B487DBF1D9E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3D48C2C4154CC8A4ADFC58 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1457D98B364D2CA9C9278F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311E492848CB472FB3C0A8B6 /* Pods-HealthTrend-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2518F9FE7F7F4DD2AE3B7B64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13880769FE1A49A898F4A929 /* Pods-HealthTrend-Dropbox-Sync-API-SDK */;
+			targetProxy = 7D2FA4B9A5334AE2A31901B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2379DCB36E604DD588630D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF73EF45F4E484E8CDB3FF3 /* Pods-HealthTrend.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2981E01C9A984C468332901C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF73EF45F4E484E8CDB3FF3 /* Pods-HealthTrend.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		64F84FAA5248423094127C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		8DB1672FFF814A1D91E00A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69BDE5E1DE849ABAB604530 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-HealthTrend-Dropbox-Sync-API-SDK-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CD654C6CD7441EF87E563D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		A008088C0DA849A9A507569E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69BDE5E1DE849ABAB604530 /* Pods-HealthTrend-Dropbox-Sync-API-SDK-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-HealthTrend-Dropbox-Sync-API-SDK-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EC103C63DD44D619F59E1BD /* Build configuration list for PBXNativeTarget "Pods-HealthTrend-Dropbox-Sync-API-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1672FFF814A1D91E00A45 /* Release */,
+				A008088C0DA849A9A507569E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		722E29CBA1824903A81D2EEE /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD654C6CD7441EF87E563D4 /* Debug */,
+				64F84FAA5248423094127C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6B71E643D86491AA8628F86 /* Build configuration list for PBXNativeTarget "Pods-HealthTrend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2379DCB36E604DD588630D6D /* Release */,
+				2981E01C9A984C468332901C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92D12F6C7D5E4AC29AF3BAEE /* Project object */;
+}
