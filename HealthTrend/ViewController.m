@@ -16,11 +16,26 @@
 @property (nonatomic, retain) NSMutableArray *occurrences;
 
 @property (weak,nonatomic) IBOutlet UITableView* occurrenceTableView;
+- (IBAction)toogleOccurenceAddView;
+- (IBAction)endEditMode;
+- (BOOL)cellIsSelected:(NSIndexPath *)indexPath;
+
+//@property (nonatomic,retain)
 
 @end
 
 @implementation ViewController
 
+//@synthesize selectedIndexes = _selectedIndexes;
+
+typedef NS_ENUM(NSUInteger, OccurenceType) {
+    oOccurenceStandard,
+    oOccurenceInjection,
+    oOccurenceGastro
+};
+
+int currentSelection = -1;
+NSMutableDictionary *selectedIndexes;
 
 //@synthesize table = _table;
 
@@ -29,6 +44,7 @@
     [super viewDidLoad];
     self.occurrenceTableView.dataSource = self;
     self.occurrenceTableView.delegate = self;
+    selectedIndexes = [[NSMutableDictionary alloc] init];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -79,12 +95,18 @@
     }
 }
 
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    if (self.occurrenceTableView.editing)
 //        return 90;
 //    else
 //        return 70;
-//}
+    if([self cellIsSelected:indexPath]) {
+        return 90;
+    }
+    else{
+        return 70;
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -104,7 +126,24 @@
         [formater setDateFormat: @"E d MMM`yy\nHH:mm 'Uhr'"];
         NSString *dateString =[formater stringFromDate:date];
         NSLog(@"Datestring of rendered cell: %@",dateString);
-        
+        int type = [occurrence[@"type"] intValue];
+        switch (type) {
+            case oOccurenceInjection:
+                [taskCell.typeImageView setImage:[UIImage imageNamed:@"syringe"]];
+//                CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, oldFrame.size.width, oldFrame.size.height);
+//                taskCell.imageView.frame = newFrame;
+                break;
+            
+            case oOccurenceGastro:
+                [taskCell.typeImageView setImage:[UIImage imageNamed:@"toilet"]];
+                break;
+                
+            default: //= oOccurenceStandard
+                [taskCell.typeImageView setImage:[UIImage imageNamed:@"headache"]];
+                //show head icon
+                //show standard stuff
+                break;
+        }
 
         taskCell.labelDate.text = dateString;
         [taskCell.switchMedicated setOn:[occurrence[@"medicated"] boolValue]];
@@ -117,16 +156,21 @@
         //        } else {
         //            checkmark.hidden = YES;
         //        }
-//        if (self.occurrenceTableView.editing) {
-//            [taskCell.stepperStrength setHidden:NO];
-//            [taskCell.switchMedicated setHidden:NO];
-//            [taskCell.labelDetails setHidden:YES];
-//        }else{
-//            [taskCell.labelDetails setHidden:NO];
-//            [taskCell.stepperStrength setHidden:YES];
-//            [taskCell.switchMedicated setHidden:YES];
-//        }
-        
+        if([self cellIsSelected:indexPath]) {
+            [taskCell.stepperStrength setHidden:NO];
+            switch (type) {
+                case oOccurenceInjection:
+                    [taskCell.switchMedicated setHidden:YES];
+                    break;
+                default:
+                    [taskCell.switchMedicated setHidden:NO];
+                    break;
+            }
+        }else{
+            [taskCell.stepperStrength setHidden:YES];
+            [taskCell.switchMedicated setHidden:YES];
+        }
+
         return taskCell;
     }
 }
@@ -148,12 +192,18 @@
         DBRecord *task = [_occurrences objectAtIndex:[indexPath row]];
         OccurrenceCell *cell = sender;
         task[@"strength"] = [NSNumber numberWithDouble:cell.stepperStrength.value];
-        [self.occurrenceTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.occurrenceTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     }
 }
 
 
 #pragma mark - UITableViewDelegate
+
+- (BOOL)cellIsSelected:(NSIndexPath *)indexPath {
+	// Return whether the cell at the specified index path is selected or not
+	NSNumber *selectedIndex = [selectedIndexes objectForKey:[NSNumber numberWithLong:[indexPath row]]];
+	return selectedIndex == nil ? FALSE : [selectedIndex boolValue];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    if (self.account) {
@@ -161,7 +211,23 @@
 //        task[@"medicated"] = [task[@"medicated"] boolValue] ? @NO : @YES;
 //        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 //    }
+    [self.table deselectRowAtIndexPath:indexPath animated:YES];
+//    NSLog(@"cellIsSelectedBeforeSettingMade: %@ forIndexPathRow: %li", [NSNumber numberWithBool:[self cellIsSelected:indexPath]], (long)[indexPath row]);
+    [selectedIndexes setObject:[NSNumber numberWithBool:!((BOOL)[self cellIsSelected:indexPath])] forKey:[NSNumber numberWithLong:[indexPath row]]];
+//    NSLog(@"cellIsSelected: %@ forIndexPathRow: %li", [NSNumber numberWithBool:[self cellIsSelected:indexPath]], (long)[indexPath row]);
+    [tableView beginUpdates];
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+    [tableView endUpdates];
+    
+//    [tableView beginUpdates];
+//    [tableView endUpdates];
+    
 }
+
+//-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+//
+//
+//}
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return self.account && [indexPath row] < [_occurrences count];
@@ -179,21 +245,43 @@
 
 #pragma mark - UITextFieldDelegate methods
 
-- (IBAction)addItemToTable {
+- (void)addItemToTableWithType: (OccurenceType)oType {
     if(self.account)
     {
         NSLog(@"found account");
         DBTable *tasksTbl = [self.store getTable:@"occurrences"];
-        DBRecord *task = [tasksTbl insert:@{ @"strength": [NSNumber numberWithInt:0], @"medicated": @NO, @"date": [NSDate date] } ];
+        DBRecord *task = [tasksTbl insert:@{ @"strength": [NSNumber numberWithInt:0], @"medicated": @NO, @"date": [NSDate date], @"type": [NSNumber numberWithInt:oType]} ];
         NSLog(@"task1: %@",(NSNumber*)task[@"strength"]);
         [_occurrences insertObject:task atIndex:0];
-        NSLog(@"anzahl occurrences: %i",[_occurrences count]);
+        NSLog(@"anzahl occurrences: %lu",(unsigned long)[_occurrences count]);
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:(0) inSection:0];
         [self.occurrenceTableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     else{
         [[DBAccountManager sharedManager] linkFromController:self];
     }
+}
+
+- (IBAction)addOccurenceStandard {
+    [self toogleOccurenceAddView];
+    [self addItemToTableWithType:oOccurenceStandard];
+}
+
+- (IBAction)addOccurenceInjection {
+    [self toogleOccurenceAddView];
+    [self addItemToTableWithType:oOccurenceInjection];
+}
+
+- (IBAction)addOccurenceGastro {
+    [self toogleOccurenceAddView];
+    [self addItemToTableWithType:oOccurenceGastro];
+
+}
+
+- (IBAction)toogleOccurenceAddView{
+    [self endEditMode];
+    [selectedIndexes setObject:[NSNumber numberWithBool:YES] forKey:[NSNumber numberWithInt:0]];
+    [self.addOccurenceSelectorView setHidden:!self.addOccurenceSelectorView.hidden];
 }
 
 #pragma mark - private methods
@@ -298,13 +386,22 @@
 //    }
 //}
 
--(IBAction)startEditMode{
-    if([_occurrences count] > 0)
-    {
-        [self.occurrenceTableView setEditing:!self.occurrenceTableView.editing animated:YES];
-        self.occurrenceTableView.rowHeight = self.occurrenceTableView.editing?90:70;
-        [self.occurrenceTableView reloadData];
+-(IBAction)endEditMode{
+//    if([_occurrences count] > 0)
+//    {
+//        [self.occurrenceTableView setEditing:!self.occurrenceTableView.editing animated:YES];
+//        self.occurrenceTableView.rowHeight = self.occurrenceTableView.editing?90:70;
+//        [self.occurrenceTableView reloadData];
+//    }
+//    [self.doneButton setEnabled:NO];
+    NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+    for(id key in selectedIndexes) {
+        [indexPaths addObject:[NSIndexPath indexPathForRow:[key integerValue]  inSection:0]];
     }
+    [selectedIndexes removeAllObjects];
+    [self.table beginUpdates];
+    [self.table reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationRight];
+    [self.table endUpdates];
 }
 
 @end

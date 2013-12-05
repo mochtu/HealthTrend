@@ -14,6 +14,9 @@
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, OccurrenceCellDelegate>
 
 @property (strong,nonatomic) IBOutlet OccurrenceTable* table;
+@property (strong,nonatomic) IBOutlet UIView* addOccurenceSelectorView;
+@property (strong,nonatomic) IBOutlet UIBarButtonItem* doneButton;
+
 
 
 

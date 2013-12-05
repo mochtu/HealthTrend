@@ -14,5 +14,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *labelDescriptorStrength;
 @property (nonatomic, retain) IBOutlet UISwitch *switchMedicated;
 @property (nonatomic, retain) IBOutlet UIStepper *stepperStrength;
+@property (retain, nonatomic) IBOutlet UIImageView *typeImageView;
 
 @end

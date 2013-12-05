@@ -21,6 +21,12 @@
 		CD09108F1840F920005B6295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0910711840F91F005B6295 /* UIKit.framework */; };
 		CD0910971840F920005B6295 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD0910951840F920005B6295 /* InfoPlist.strings */; };
 		CD0910991840F920005B6295 /* HealthTrendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0910981840F920005B6295 /* HealthTrendTests.m */; };
+		CD171AD11850B1B100C6D181 /* headache.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171ACB1850B1B100C6D181 /* headache.png */; };
+		CD171AD21850B1B100C6D181 /* headache@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171ACC1850B1B100C6D181 /* headache@2x.png */; };
+		CD171AD31850B1B100C6D181 /* syringe.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171ACD1850B1B100C6D181 /* syringe.png */; };
+		CD171AD41850B1B100C6D181 /* syringe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171ACE1850B1B100C6D181 /* syringe@2x.png */; };
+		CD171AD51850B1B100C6D181 /* toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171ACF1850B1B100C6D181 /* toilet.png */; };
+		CD171AD61850B1B100C6D181 /* toilet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171AD01850B1B100C6D181 /* toilet@2x.png */; };
 		CDF8695C184105E30015FB51 /* OccurrenceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF86959184105E30015FB51 /* OccurrenceCell.m */; };
 		DA533EB7012C462C932FC5E7 /* libPods-HealthTrend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8090DBD177D1494B8E3662FE /* libPods-HealthTrend.a */; };
 /* End PBXBuildFile section */
@@ -56,6 +62,12 @@
 		CD0910941840F920005B6295 /* HealthTrendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HealthTrendTests-Info.plist"; sourceTree = "<group>"; };
 		CD0910961840F920005B6295 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD0910981840F920005B6295 /* HealthTrendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthTrendTests.m; sourceTree = "<group>"; };
+		CD171ACB1850B1B100C6D181 /* headache.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headache.png; sourceTree = "<group>"; };
+		CD171ACC1850B1B100C6D181 /* headache@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headache@2x.png"; sourceTree = "<group>"; };
+		CD171ACD1850B1B100C6D181 /* syringe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syringe.png; sourceTree = "<group>"; };
+		CD171ACE1850B1B100C6D181 /* syringe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "syringe@2x.png"; sourceTree = "<group>"; };
+		CD171ACF1850B1B100C6D181 /* toilet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toilet.png; sourceTree = "<group>"; };
+		CD171AD01850B1B100C6D181 /* toilet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toilet@2x.png"; sourceTree = "<group>"; };
 		CDF86958184105E30015FB51 /* OccurrenceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccurrenceCell.h; sourceTree = "<group>"; };
 		CDF86959184105E30015FB51 /* OccurrenceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccurrenceCell.m; sourceTree = "<group>"; };
 		D8C054E716B94FEB972EFEEE /* Pods-HealthTrend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTrend.xcconfig"; path = "Pods/Pods-HealthTrend.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +133,7 @@
 		CD0910731840F91F005B6295 /* HealthTrend */ = {
 			isa = PBXGroup;
 			children = (
+				CD171ABA1850ADC000C6D181 /* Images */,
 				CDF86958184105E30015FB51 /* OccurrenceCell.h */,
 				CDF86959184105E30015FB51 /* OccurrenceCell.m */,
 				CD09107C1840F91F005B6295 /* AppDelegate.h */,
@@ -161,6 +174,19 @@
 				CD0910951840F920005B6295 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD171ABA1850ADC000C6D181 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CD171ACB1850B1B100C6D181 /* headache.png */,
+				CD171ACC1850B1B100C6D181 /* headache@2x.png */,
+				CD171ACD1850B1B100C6D181 /* syringe.png */,
+				CD171ACE1850B1B100C6D181 /* syringe@2x.png */,
+				CD171ACF1850B1B100C6D181 /* toilet.png */,
+				CD171AD01850B1B100C6D181 /* toilet@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0910861840F91F005B6295 /* Images.xcassets in Resources */,
+				CD171AD61850B1B100C6D181 /* toilet@2x.png in Resources */,
+				CD171AD41850B1B100C6D181 /* syringe@2x.png in Resources */,
 				CD0910781840F91F005B6295 /* InfoPlist.strings in Resources */,
+				CD171AD21850B1B100C6D181 /* headache@2x.png in Resources */,
+				CD171AD31850B1B100C6D181 /* syringe.png in Resources */,
+				CD171AD11850B1B100C6D181 /* headache.png in Resources */,
+				CD171AD51850B1B100C6D181 /* toilet.png in Resources */,
 				CD0910811840F91F005B6295 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

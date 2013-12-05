@@ -12,13 +12,13 @@
 
 -(void)setEditing:(BOOL)editing animated:(BOOL)animated{
     
-    if (editing) {
-        [self.stepperStrength setHidden:NO];
-        [self.switchMedicated setHidden:NO];
-    }else{
-        [self.stepperStrength setHidden:YES];
-        [self.switchMedicated setHidden:YES];;
-    }
+//    if (editing) {
+//        [self.stepperStrength setHidden:NO];
+//        [self.switchMedicated setHidden:NO];
+//    }else{
+//        [self.stepperStrength setHidden:YES];
+//        [self.switchMedicated setHidden:YES];;
+//    }
 }
 
 
